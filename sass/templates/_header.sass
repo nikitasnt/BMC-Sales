@@ -1,0 +1,86 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background-color: #f6f6f6
+  border-bottom: 1px solid #d7d7d7
+  padding: 7px 0
+  &__container
+    position: relative
+  &__flag
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: $white
+    margin-top: 7px
+    right: 15px
+    width: 61px
+    height: 84px
+    background: url('../img/orange-flag.svg') no-repeat 100% / cover
+    transition: 0.3s
+    cursor: pointer
+    &:hover
+      color: $orange
+      background: url('../img/transparent-flag.svg') no-repeat 100% / cover
+    &_transparent
+      color: $orange
+      right: 86px
+      background: url('../img/transparent-flag.svg') no-repeat 100% / cover
+      &:hover
+        color: $white
+        background: url('../img/orange-flag.svg') no-repeat 100% / cover
+.flag
+  &__icon
+    margin-top: 13px
+    font-size: 20px
+  &__num
+    margin-top: 6px
+    font-size: 16px
+.menu
+  height: 100%
+  display: flex
+  align-items: center
+  &__logo
+    width: 32px
+    height: 32px
+  &__button
+    background-color: transparent
+    border: none
+    outline: none
+    cursor: pointer
+    margin-left: auto
+    transition: 0.3s
+    color: #202020
+    &:hover
+      color: #9c9c9c
+  &__button-icon
+    margin-left: 9px
+    color: #9c9c9c
+.nav
+  margin-left: 30px
+  &__item
+    position: relative
+    text-decoration: none
+    margin-right: 38px
+    color: #9c9c9c
+    transition: 0.3s
+    &:hover
+      color: #202020
+    &::after
+      content: ''
+      position: absolute
+      margin-top: 2px
+      margin-left: 21px
+      height: 13px
+      width: 2px
+      background-color: #9c9c9c
+  &__icon
+    margin-left: 8px
+  &__mobile
+    text-decoration: none
+    color: #9c9c9c
+    transition: 0.3s
+    &:hover
+      color: #202020

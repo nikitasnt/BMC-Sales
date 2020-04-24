@@ -10,16 +10,35 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="menu">
-        <div class="menu__logo"></div>
+        <a href="#" class="menu__logo">
+          <img src="img/logo.png" alt="Лого">
+        </a>
+        <nav class="menu__nav nav">
+          <a href="#" class="nav__item">Соц. сети<i class="fas fa-comment-dots nav__icon"></i></a>
+          <a href="#" class="nav__item">Торгов. сети<i class="fas fa-cart-arrow-down nav__icon"></i></a>
+          <a href="#" class="nav__item">Туристич. сети<i class="fas fa-globe nav__icon"></i></a>
+          <a href="#" class="nav__item">Ассоциации<i class="fas fa-eye nav__icon"></i></a>
+          <a href="#" class="nav__item">Сервисы<i class="fas fa-wrench nav__icon"></i></a>
+          <a href="#" class="nav__mobile"><i class="fab fa-android"></i></a>
+        </nav>
+        <button class="menu__button">Вход на сайт<i class="fas fa-lock menu__button-icon"></i></button>
       </div>
       <!-- /.menu -->
+      <div class="flag header__flag">
+        <span class="flag__icon"><i class="fas fa-shopping-bag"></i></span>
+        <span class="flag__num">2</span>
+      </div>
+      <div class="flag header__flag header__flag_transparent">
+        <span class="flag__icon"><i class="far fa-heart"></i></span>
+        <span class="flag__num">0</span>
+      </div>
     </div>
     <!-- /.container -->
   </header>
   <!-- /.header -->
-
+  
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>
