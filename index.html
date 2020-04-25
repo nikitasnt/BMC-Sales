@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMC Sales</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,6 +16,7 @@
         <a href="#" class="menu__logo">
           <img src="img/logo.png" alt="Лого">
         </a>
+        <h2 class="menu__title">BMC Sales</h2>
         <nav class="menu__nav nav">
           <a href="#" class="nav__item">Соц. сети<i class="fas fa-comment-dots nav__icon"></i></a>
           <a href="#" class="nav__item">Торгов. сети<i class="fas fa-cart-arrow-down nav__icon"></i></a>
@@ -22,8 +24,21 @@
           <a href="#" class="nav__item">Ассоциации<i class="fas fa-eye nav__icon"></i></a>
           <a href="#" class="nav__item">Сервисы<i class="fas fa-wrench nav__icon"></i></a>
           <a href="#" class="nav__mobile"><i class="fab fa-android"></i></a>
+          <div class="nav__flags">
+            <a href="#" class="nav__flag">
+              <i class="far fa-heart"></i>
+              <span>0</span>
+            </a>
+            <a href="#" class="nav__flag nav__flag_second">
+              <i class="fas fa-shopping-bag"></i>
+              <span>2</span>
+            </a>
+          </div>
         </nav>
         <button class="menu__button">Вход на сайт<i class="fas fa-lock menu__button-icon"></i></button>
+        <div class="header__burger">
+          <span></span>
+        </div>
       </div>
       <!-- /.menu -->
       <div class="flag header__flag">
@@ -38,7 +53,83 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
-  
+
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <div class="hero__top">
+          <a href="#" class="hero__brand brand">
+            <div class="brand__logo">
+              <img src="img/logo.png" alt="Лого">
+            </div>
+            <div class="brand__text">
+              <strong class="brand__name">BMC Sales</strong>
+              <span class="brand__description">партнерская сеть продаж</span>
+            </div>
+          </a>
+          <!-- /.hero__brand -->
+          <nav class="hero__link-bar">
+            <a href="#" class="hero__link">Объявления</a>
+            <a href="#" class="hero__link hero__link_list">Каталоги<i class="fas fa-angle-down"></i></a>
+            <a href="#" class="hero__link">Участники</a>
+            <a href="#" class="hero__link">Партнеры</a>
+            <a href="#" class="hero__link">О платформе</a>
+            <a href="#" class="hero__link">Новости</a>
+            <a href="#" class="hero__link"><i class="fas fa-search"></i></a>
+          </nav>
+          <!-- /.hero__link-bar -->
+        </div>
+        <!-- /.hero__top -->
+        <div class="hero__bottom">
+          <div class="hero__content">
+            <h1 class="hero__title">Школьная форма <br>по <span>самым выгодным</span> ценам</h1>
+            <button class="hero__button">Подробнее<i class="fas fa-angle-right"></i></button>
+            <div class="hero__slide-buttons">
+              <button class="hero__slide hero__slide-prev"><i class="fas fa-angle-left"></i></button>
+              <button class="hero__slide hero__slide-next hero__slide_active"><i class="fas fa-angle-right"></i></button>
+            </div>
+          </div>
+          <!-- /.hero__content -->
+          <div class="swiper-container hero__swiper-container swiper-no-swiping">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hero__swiper-slide">
+                <div class="hero__image">
+                  <img src="img/main.png" alt="Школькая форма">
+                </div>
+                <div class="hero__clothes">
+                  <a href="#" class="hero__link-clothes">Комплект школьной формы «Модерн-стиль»</a>
+                  <span class="hero__price">от <span>9000</span> тг.</span>
+                </div>
+              </div>
+              <div class="swiper-slide hero__swiper-slide">
+                <div class="hero__image">
+                  <img src="img/main.png" alt="Школькая форма">
+                </div>
+                <div class="hero__clothes">
+                  <a href="#" class="hero__link-clothes">Комплект школьной формы «Модерн-стиль»</a>
+                  <span class="hero__price">от <span>9000</span> тг.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="hero__social">
+            <a href="#" class="hero__link-social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hero__link-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hero__link-social"><i class="fab fa-vk"></i></a>
+            <a href="#" class="hero__link-social"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- /.hero__bottom -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section hero -->
+  </main>
+
+  <script src="js/swiper.min.js"></script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/main.js"></script>
 </body>

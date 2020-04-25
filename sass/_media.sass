@@ -1,22 +1,228 @@
 // .container
 //   padding: 0 15px
-@media (min-width: 576px)
+@media (min-width: 575px)
   .container
     max-width: 570px
     margin: auto
     padding: 0
-@media (min-width: 768px)
+@media (min-width: 767px)
   .container
     max-width: 750px
-@media (min-width: 992px)
+@media (min-width: 991px)
   .container
     max-width: 990px
 @media (min-width: 1199px)
   .container
     max-width: 1170px
-@media (min-width: 1440px)
+@media (min-width: 1441px)
   .container
     max-width: 1396px
-
 // выше контейнер из бутстрапа с +30px к max-width из-за
 // box-sizing: border-box для соответсвия макету
+
+
+
+// главная страница сайта
+
+// сеция header и hero
+@media screen and (max-width: 1440px)
+  .hero
+    &__link-bar
+      margin-left: 51px
+    &__content
+      width: 446px
+@media screen and (max-width: 1198px)
+  .hero
+    &__title
+      font-size: 29px
+    &__image
+      width: 400px
+    &__swiper-container
+      height: 374px
+      align-self: flex-end
+  .brand
+    &__name
+      font-size: 16px
+      letter-spacing: 3.16px
+    &__description
+      font-size: 9px
+      letter-spacing: 0.12px
+  .hero
+    &__link-bar
+      font-size: 13px
+      margin-left: 29px
+    &__link
+      margin-right: 27px
+    &__content
+      margin-bottom: 30px
+      margin-top: 61px
+@media screen and (max-width: 990px)
+  .nav
+    margin-left: 8px
+    &__item
+      margin-right: 15px
+      &::after
+        display: none
+  .hero
+    &__title
+      font-size: 23px
+    &__button
+      padding: 11px 22px 11px 22px
+      font-size: 16px
+      i 
+        font-size: 13px
+    &__link-bar
+      display: none
+      // text-align: end
+      // max-width: 393px
+      // margin-bottom: -21px
+    &__link
+      line-height: 29px
+    &__clothes
+      display: none
+@media screen and (max-width: 766px)
+  .hero
+    &__top
+      display: none
+    &__content
+      width: 665px
+    &__image
+      width: 313px
+    &__swiper-container
+      height: 293px
+    &__bottom
+      margin-top: -36px
+    &__slide
+      font-size: 32px
+      width: 40px
+      height: 40px
+    &__social
+      margin-bottom: 18px
+  .header
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 15px
+      z-index: 3
+      &::before
+        content: ''
+        position: absolute
+        background-color: #9c9c9c
+        width: 100%
+        height: 2px
+        left: 0
+        top: 0
+        transition: 0.3s
+      &::after
+        content: ''
+        position: absolute
+        background-color: #9c9c9c
+        width: 100%
+        height: 2px
+        left: 0
+        bottom: 0
+        transition: 0.3s
+      span
+        position: absolute
+        background-color: #9c9c9c
+        width: 100%
+        height: 2px
+        left: 0
+        top: 7px
+        transition: 0.3s
+      &_active
+        &::before
+          transform: rotate(45deg)
+          top: 7px
+        &::after
+          transform: rotate(-45deg)
+          bottom: 7px
+        span 
+          display: none
+    &__flag
+      display: none
+  .menu
+    &__title
+      display: inline-block
+      color: #9c9c9c
+      font-family: 'DINPro-Regular', sans-serif
+      font-weight: 400
+      margin: 0
+      margin-left: 5px
+      text-transform: uppercase
+      font-size: 15px
+    &__button
+      margin-right: 14px
+  .nav
+    position: absolute
+    flex-direction: column
+    align-items: flex-end
+    top: 45px
+    right: -300px
+    padding: 21px 29px
+    z-index: 3
+    background-color: #f6f6f6
+    border: 1px solid #cccccc
+    border-radius: 3%
+    transition: 0.3s
+    &_active
+      right: 0
+    &__item
+      margin-right: 0
+      margin-bottom: 10px
+      font-size: 16px
+    &__mobile
+      display: none
+    &__flags
+      margin-top: 6px
+      display: flex
+      justify-content: space-around
+      width: 100%
+    &__flag
+      text-decoration: none
+      flex-basis: 40%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      color: $orange
+      background-color: $white
+      width: 40px
+      height: 50px
+      border-radius: 30%
+      border: 1px solid #d7d7d7
+      &_second
+        border: 1px solid $orange
+        align-items: center
+        justify-content: center
+        flex-basis: 40%
+        color: $white
+        background-color: $orange
+@media screen and (max-width: 574px)
+  .hero
+    &__content
+      width: auto
+      max-width: 355px
+    &__title
+      line-height: 32px
+      &::before
+        top: -22px
+      &::after
+        bottom: -106px
+    &__button
+      margin-bottom: 59px
+    &__swiper-container
+      height: auto
+      width: 100%
+      margin: 0
+    &__bottom
+      flex-direction: column
+      align-items: center
+    &__social
+      display: none
+    &__image
+      width: 100%
+  .nav
+    &_active
+      right: 5px

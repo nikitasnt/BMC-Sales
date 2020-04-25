@@ -6,6 +6,7 @@
   background-color: #f6f6f6
   border-bottom: 1px solid #d7d7d7
   padding: 7px 0
+  z-index: 99
   &__container
     position: relative
   &__flag
@@ -31,6 +32,8 @@
       &:hover
         color: $white
         background: url('../img/orange-flag.svg') no-repeat 100% / cover
+  &__burger
+    display: none
 .flag
   &__icon
     margin-top: 13px
@@ -45,6 +48,8 @@
   &__logo
     width: 32px
     height: 32px
+  &__title
+    display: none
   &__button
     background-color: transparent
     border: none
@@ -59,6 +64,8 @@
     margin-left: 9px
     color: #9c9c9c
 .nav
+  display: flex;
+  align-items: center;
   margin-left: 30px
   &__item
     position: relative
@@ -71,16 +78,19 @@
     &::after
       content: ''
       position: absolute
-      margin-top: 2px
+      margin-top: 3px
       margin-left: 21px
       height: 13px
       width: 2px
       background-color: #9c9c9c
+  &__flags
+    display: none
   &__icon
     margin-left: 8px
   &__mobile
     text-decoration: none
     color: #9c9c9c
     transition: 0.3s
+    font-size: 24px
     &:hover
       color: #202020

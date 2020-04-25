@@ -1,0 +1,174 @@
+.hero
+  margin-top: 66px
+  background-color: #f6f6f6
+  margin-top: 0
+  padding-top: 67px
+  &__top
+    display: flex
+    align-items: center
+  &__bottom
+    display: flex
+  &__link-bar
+    margin-left: 249px
+    margin-top: -11px
+    font-family: 'DINPro-Medium', sans-serif
+    font-size: 16px
+  &__link
+    text-decoration: none
+    color: #202020
+    margin-right: 31px
+    transition: 0.3s
+    &:hover
+      color: $orange
+    i 
+      font-size: 14px
+      color: $orange
+      transition: 0.3s
+      &:hover
+        color: $black
+    &_list
+      color: $orange
+      &:hover
+        color: $black
+        i
+          color: $black
+      i 
+        margin-left: 7px
+        font-size: 12px
+  &__content
+    width: 425px
+    margin-top: 92px
+  &__title
+    position: relative
+    text-transform: uppercase
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    font-size: 36px
+    letter-spacing: 0.36px
+    line-height: 48px
+    margin-bottom: 31px
+    &::before
+      content: ''
+      position: absolute 
+      background-color: #cccccc
+      width: 50px
+      height: 1px
+      display: block
+      top: -28px
+    &::after
+      content: '' 
+      position: absolute
+      background-color: #cccccc
+      width: 50px
+      height: 1px
+      display: block
+      bottom: -124px
+    span
+      font-family: 'DINPro-Bold', sans-serif
+      font-weight: 700
+  &__button
+    position: relative
+    font-size: 18px
+    border: 2px solid $dark
+    outline: none
+    padding: 14px 28px 14px 28px
+    background-color: $dark
+    color: #f6f6f6
+    transition: 0.4s
+    margin-bottom: 81px
+    &:hover
+      cursor: pointer
+      background-color: #f6f6f6
+      color: $dark
+    i 
+      font-size: 14px
+      margin-left: 14px
+  &__slide
+    width: 45px
+    height: 45px
+    outline: none
+    border: 2px solid #cccccc
+    background-color: #f6f6f6
+    color: #cccccc
+    font-size: 36px
+    transition: 0.3s
+    margin-right: 10px
+    &_active
+      cursor: pointer
+      background-color: $dark
+      border: 2px solid $dark
+      color: #f6f6f6
+      &:hover
+        background-color: #383838
+        border: 2px solid #383838
+  &__swiper-container
+    width: 790px
+    margin-left: -35px
+    margin-top: 30px
+  &__swiper-slide
+    position: relative
+  &__clothes
+    width: 178px
+    position: absolute
+    bottom: 47px
+    right: 72px
+  &__link-clothes
+    text-decoration: none
+    color: #919191
+    line-height: 18px
+    transition: 0.3s
+    &:hover
+      color: $dark
+  &__price
+    position: relative
+    color: #919191
+    display: block
+    margin-top: 9px
+    &::before
+      content: ''
+      position: absolute
+      width: 30px
+      height: 1px
+      background-color: #cccccc
+      top: -61px
+    span
+      font-size: 24px
+      color: $orange
+  &__social
+    align-self: flex-end
+    display: flex
+    flex-direction: column
+    height: 119px
+    justify-content: space-between
+    margin-bottom: 49px
+  &__link-social
+    color: #919191
+    font-size: 12px
+    text-decoration: none
+    transition: 0.4s
+    &:hover
+      color: $dark
+.brand
+  display: flex
+  align-items: center
+  text-decoration: none
+  color: #202020
+  &__logo
+    width: 60px
+    height: 60px
+    margin-right: 15px
+  &__text
+    margin-top: -10px
+  &__name
+    text-transform: uppercase
+    font-family: 'DINPro-Medium', sans-serif
+    font-weight: 500
+    font-size: 24px
+    letter-spacing: 2.16px
+  &__description
+    font-size: 12px
+    font-weight: 400
+    letter-spacing: 0.12px
+    display: block
+    margin-left: 1.7px
+    margin-top: -3px
