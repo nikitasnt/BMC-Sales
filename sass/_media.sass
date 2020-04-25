@@ -16,7 +16,7 @@
     max-width: 1170px
 @media (min-width: 1441px)
   .container
-    max-width: 1396px
+    max-width: 1366px
 // выше контейнер из бутстрапа с +30px к max-width из-за
 // box-sizing: border-box для соответсвия макету
 
@@ -226,3 +226,50 @@
   .nav
     &_active
       right: 5px
+
+// сеция popular
+@media screen and (max-width: 1440px)
+  .popular
+    &__approved
+      &::before
+        width: 221px
+        left: -222px
+      &::after
+        width: 221px
+        right: -222px
+    &__col
+      padding: 47px 28px 53px 176px
+@media screen and (max-width: 1198px)
+  .popular
+    &__approved
+      &::before
+        display: none
+      &::after
+        display: none
+    &__col
+      padding: 41px 13px 22px 124px
+@media screen and (max-width: 990px)
+  .popular
+    &__approved
+      width: 100%
+    &__row
+      flex-direction: column
+      align-items: center
+    &__col
+      width: 100%
+      padding: 47px 28px 53px 176px
+      margin-bottom: 31px
+@media screen and (max-width: 574px)
+  .popular
+    &__approved
+      padding: 25px 7px
+      font-size: 19px
+      span
+        &:nth-of-type(2)
+          display: block
+    &__link
+      padding: 12px 21px
+@media screen and (max-width: 395px)
+  .popular
+    &__col
+      padding: 28px 6px 30px 110px

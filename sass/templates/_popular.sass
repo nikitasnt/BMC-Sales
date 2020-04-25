@@ -1,0 +1,89 @@
+.popular
+  &__approved
+    position: relative
+    display: block
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    font-size: 24px
+    text-decoration: none
+    text-align: center
+    color: $dark
+    text-transform: uppercase
+    border: 2px solid $dark
+    padding: 35px 59px
+    max-width: 720px
+    margin: 0 auto
+    transition: 0.3s
+    margin-top: 28px
+    margin-bottom: 30px
+    background-color: $white
+    span
+      &:nth-of-type(1)
+        font-family: 'DINPro-Bold', sans-serif
+        font-weight: 700
+    i
+      margin-left: 18px
+      font-size: 18px
+    &:hover
+      background-color: $dark
+      color: $white
+    &::before
+      position: absolute
+      content: ''
+      display: block
+      width: 321px
+      height: 1px
+      top: 50%
+      left: -322px
+      background: url('../img/popular/approved-left.svg') no-repeat 100% / contain
+    &::after
+      position: absolute
+      content: ''
+      display: block
+      width: 321px
+      height: 1px
+      top: 50%
+      right: -322px
+      background: url('../img/popular/approved-right.svg') no-repeat 100% / contain
+  &__row
+    display: flex
+    justify-content: space-between
+  &__col
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    width: 32%
+    max-width: 434px
+    padding: 35px 49px 89px 217px
+    max-height: 250px
+    &:nth-of-type(1)
+      background: #f6f6f6 url('../img/popular/card-boy.jpg') no-repeat bottom / contain
+    &:nth-of-type(2)
+      background: #f6f6f6 url('../img/popular/card-girl.jpg') no-repeat bottom / contain
+    &:nth-of-type(3)
+      background: #f6f6f6 url('../img/popular/card-backpack.jpg') no-repeat bottom / contain
+  &__name
+    font-family: 'DINPro-Light', sans-serif
+    font-size: 14px
+    color: #919191
+    line-height: 17px
+    text-align: right
+    margin-bottom: 33px
+    span
+      display: block
+      color: $black
+      font-size: 24px
+  &__link
+    font-family: 'DINPro-Medium', sans-serif
+    font-weight: 500
+    text-decoration: none
+    color: $dark
+    border: 2px solid $dark
+    transition: 0.3s
+    padding: 14px 28px
+    &:hover
+      color: #f6f6f6
+      background-color: $dark
+    i 
+      font-size: 11px
+      margin-left: 13px
