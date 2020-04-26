@@ -22,4 +22,12 @@ $(document).ready(function () {
     $('.header__burger').toggleClass('header__burger_active');
     $('.nav').toggleClass('nav_active');
   });
+
+
+
+  // спойлер
+  $('.categories__button').on('click', function() {
+    $('.categories__hidden').slideToggle(600);
+    $(this).toggleClass('categories__button_active');
+  });
 });

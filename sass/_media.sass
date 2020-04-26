@@ -273,3 +273,55 @@
   .popular
     &__col
       padding: 28px 6px 30px 110px
+
+// сеция categories
+@media screen and (max-width: 1440px)
+  .categories
+    &__title
+      &::before
+        width: 312px
+        height: 9.3px
+        left: -351px
+      &::after
+        width: 312px
+        height: 9.3px
+        right: -341px
+    &__row
+      &:last-of-type
+        a 
+          margin-right: 11px
+    &__col
+      max-width: 284px
+@media screen and (max-width: 1198px)
+  .categories
+    &__row
+      flex-wrap: wrap
+      justify-content: center
+    &__col
+      width: 50%
+      max-width: 367px
+      margin-right: 15px
+      margin-left: 15px
+@media screen and (max-width: 990px)
+  .categories
+    &__title
+      &::before
+        display: none
+      &::after
+        display: none
+    &__col
+      max-width: 325px
+@media screen and (max-width: 766px)
+  .categories
+    &__col
+      max-width: 100%
+      width: 100%
+@media screen and (max-width: 345px)
+  .categories
+    &__title
+      width: 272px
+      font-size: 32px
+    &__col
+      i 
+        left: 10px
+        top: 9px
