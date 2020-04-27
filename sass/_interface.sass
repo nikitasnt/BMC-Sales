@@ -1,0 +1,77 @@
+.card
+  display: flex
+  flex-direction: column
+  text-align: left
+  text-decoration: none
+  padding-bottom: 21px
+  &:hover
+    .card__image-box_hidden
+      opacity: 1
+  &__image-box
+    position: relative
+    max-height: 320px
+    &_hidden
+      opacity: 0
+      transition: opacity 0.3s
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: rgba(0,0,0,.6)
+      i 
+        position: absolute
+        color: $white
+        font-size: 20px
+        transition: 0.3s
+        top: 20px
+        right: 20px
+        &:last-of-type
+          top: 56px
+        &:hover
+          color: $orange
+  &__title
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    color: $dark
+    margin-left: 21px
+    margin-bottom: 15px
+    span 
+      display: block
+      font-family: 'DINPro-Light', sans-serif
+      font-size: 14px
+      color: #919191
+  &__score
+    color: #919191
+    margin-left: 21px
+    margin-bottom: 54px
+    letter-spacing: 0.8px
+    .fas
+      color: $orange
+  &__price-tag
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &::before
+      content: ''
+      position: absolute
+      background-color: #d7d7d7
+      width: 100%
+      height: 1px
+      top: -25px
+    i 
+      color: #919191
+      font-size: 24px
+      margin-right: 21px
+      transition: 0.3s
+      &:hover
+        color: $dark
+  &__price
+    color: $dark
+    font-weight: 400
+    font-size: 30px
+    margin-left: 21px
+    span
+      font-size: 16px

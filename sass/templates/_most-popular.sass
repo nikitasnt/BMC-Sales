@@ -1,0 +1,29 @@
+.most-popular
+  &__title
+    position: relative
+    display: block
+    margin: 0 auto
+    width: 325px
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    font-size: 36px
+    margin-bottom: 41px
+    &::before
+      content: ''
+      position: absolute
+      width: 468px
+      height: 14px
+      background: url('../img/most-popular/title-left.svg') no-repeat 100% / contain
+      left: -517px
+      top: 18px
+    &::after
+      content: ''
+      position: absolute
+      width: 468px
+      height: 14px
+      background: url('../img/most-popular/title-right.svg') no-repeat 100% / contain
+      right: -515px
+      top: 18px
+  &__row
+    display: flex
+    justify-content: space-between
