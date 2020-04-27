@@ -456,3 +456,33 @@
       margin-top: 3px
     &__num
       font-size: 32px
+
+// секция discounts
+@media screen and (max-width: 1440px)
+  .discounts
+    &__title
+      &::before
+        width: 312px
+        height: 9.3px
+        left: -360px
+      &::after
+        width: 312px
+        height: 9.3px
+        right: -350px
+@media screen and (max-width: 1198px)
+  .discounts
+    &__title
+      &::before
+        display: none
+      &::after
+        display: none
+@media screen and (max-width: 990px)
+  .discounts
+    &__row
+      flex-wrap: wrap
+      justify-content: center
+@media screen and (max-width: 574px)
+  .discounts
+    &__title
+      width: 272px
+      font-size: 32px

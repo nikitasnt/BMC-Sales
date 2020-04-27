@@ -1,0 +1,49 @@
+.discounts
+  &__title
+    position: relative
+    display: block
+    margin: 0 auto
+    width: 305px
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    font-size: 36px
+    margin-bottom: 41px
+    &::before
+      content: ''
+      position: absolute
+      width: 468px
+      height: 14px
+      background: url('../img/most-popular/title-left.svg') no-repeat 100% / contain
+      left: -517px
+      top: 18px
+    &::after
+      content: ''
+      position: absolute
+      width: 468px
+      height: 14px
+      background: url('../img/most-popular/title-right.svg') no-repeat 100% / contain
+      right: -515px
+      top: 18px
+  &__row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 67px
+  &__link
+    text-decoration: none
+    color: $dark
+    display: block
+    margin: 0 auto
+    border: 2px solid $dark
+    max-width: 196px
+    padding: 13px
+    font-family: 'DINPro-Medium', sans-serif
+    font-weight: 500
+    transition: 0.3s
+    text-align: center
+    margin-bottom: 92px
+    &:hover
+      background-color: $dark
+      color: $white
+    i 
+      margin-left: 13px
+      font-size: 11px
