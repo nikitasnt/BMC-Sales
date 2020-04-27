@@ -486,3 +486,37 @@
     &__title
       width: 272px
       font-size: 32px
+
+// секция mobile
+@media screen and (max-width: 1440px)
+  .mobile
+    padding-top: 45px
+    padding-bottom: 50px
+    &__title
+      max-width: 851px
+@media screen and (max-width: 1198px)
+  .mobile
+    background: #f47920 url("../img/mobile/bg-desktop.jpg") no-repeat 71% / cover
+    &__title
+      max-width: 820px
+@media screen and (max-width: 990px)
+  .mobile
+    &__title
+      max-width: 692px
+      font-size: 61px
+@media screen and (max-width: 766px)
+  .mobile
+    background: #f47920 url("../img/mobile/bg-mobile.jpg") no-repeat 50% / cover
+    &__container
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      text-align: center
+    &__text
+      text-align: center
+@media screen and (max-width: 574px)
+  .mobile
+    &__title
+      font-size: 39px
+      line-height: 50px
