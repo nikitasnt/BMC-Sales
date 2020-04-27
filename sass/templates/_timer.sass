@@ -1,0 +1,61 @@
+.timer
+  &__title
+    position: relative
+    display: block
+    margin: 0 auto
+    width: 422px
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    font-size: 36px
+    margin-bottom: 40px
+    &::before
+      content: ''
+      position: absolute
+      width: 418px
+      height: 14px
+      background: url('../img/timer/title-left.svg') no-repeat 100% / contain
+      left: -467px
+      top: 18px
+    &::after
+      content: ''
+      position: absolute
+      width: 418px
+      height: 14px
+      background: url('../img/timer/title-right.svg') no-repeat 100% / contain
+      right: -460px
+      top: 18px
+  &__row
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding: 0 34px
+  &__outer-circle
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 210px
+    height: 210px
+    border-radius: 50%
+    border: 2px dashed #d7d7d7
+  &__inner-circle
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    width: 198px
+    height: 198px
+    border-radius: 50%
+    border: 5px solid #f47920
+    background-color: #f6f6f6
+  &__unit
+    color: $dark
+    font-family: 'DINPro-Light', sans-serif
+    font-size: 30px
+  &__num
+    color: $orange
+    font-family: "DINPro-Bold", sans-serif
+    font-weight: 700
+    font-size: 72px
+  &__middle
+    width: 58px
+    height: 58px

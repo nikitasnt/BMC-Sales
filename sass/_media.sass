@@ -386,3 +386,73 @@
     margin-bottom: 20px
     &__image-box
       max-height: 270px
+
+// секция timer
+@media screen and (max-width: 1440px)
+  .timer
+    &__title
+      &::before
+        width: 312px
+        height: 9.3px
+        left: -352px
+      &::after
+        width: 312px
+        height: 9.3px
+        right: -305px
+@media screen and (max-width: 1198px)
+  .timer
+    &__title
+      &::before
+        display: none
+      &::after
+        display: none
+    &__middle
+      display: none
+    &__outer-circle
+      width: 180px
+      height: 180px
+    &__inner-circle
+      width: 168px
+      height: 168px
+@media screen and (max-width: 990px)
+  .timer
+    &__row
+      justify-content: space-between
+      padding: 0
+@media screen and (max-width: 766px)
+  .timer
+    &__outer-circle
+      width: 130px
+      height: 130px
+    &__inner-circle
+      width: 118px
+      height: 118px
+    &__unit
+      font-size: 21px
+    &__num
+      font-size: 44px
+@media screen and (max-width: 574px)
+  .timer
+    &__title
+      font-size: 32px
+      width: 236px
+      text-align: center
+    &__row
+      justify-content: center
+    &__outer-circle
+      width: 60px
+      height: 60px
+      border-radius: 0
+      margin-right: 6px
+      margin-left: 6px
+    &__inner-circle
+      width: 48px
+      height: 48px
+      border-radius: 0
+      border: 0
+      background-color: transparent
+    &__unit
+      font-size: 15px
+      margin-top: 3px
+    &__num
+      font-size: 32px
