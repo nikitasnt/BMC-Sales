@@ -520,3 +520,52 @@
     &__title
       font-size: 39px
       line-height: 50px
+
+// секция services
+@media screen and (max-width: 1440px)
+  .services
+    &__title
+      &::before
+        width: 312px
+        height: 9.3px
+        left: -360px
+      &::after
+        width: 312px
+        height: 9.3px
+        right: -350px
+    &__swiper-button-prev
+      left: 45.5%
+    &__swiper-button-next
+      right: 45.5%
+@media screen and (max-width: 1198px)
+  .services
+    &__title
+      &::before
+        display: none
+      &::after
+        display: none
+    &__swiper-button-prev
+      left: 45%
+    &__swiper-button-next
+      right: 45%
+@media screen and (max-width: 990px)
+  .services
+    &__swiper-button-prev
+      left: 43%
+    &__swiper-button-next
+      right: 43%
+@media screen and (max-width: 766px)
+  .services
+    &__swiper-button-prev
+      left: 41%
+    &__swiper-button-next
+      right: 41%
+@media screen and (max-width: 574px)
+  .services
+    &__title
+      width: 300px
+      font-size: 32px
+    &__swiper-button-prev
+      left: 33%
+    &__swiper-button-next
+      right: 33%

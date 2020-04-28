@@ -79,4 +79,38 @@ $(document).ready(function () {
   }
 
   countdown('05/10/2020 02:00:00 AM');
+
+
+
+  // свайпер секции services
+  var mySwiperServices = new Swiper('.services__swiper-container', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 640px
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    },
+    navigation: {
+      nextEl: ".services__swiper-button-next",
+      prevEl: ".services__swiper-button-prev"
+    }
+  });
 });
