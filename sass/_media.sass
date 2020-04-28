@@ -560,12 +560,83 @@
       left: 41%
     &__swiper-button-next
       right: 41%
+    &__swiper-container
+      margin-bottom: 66px
 @media screen and (max-width: 574px)
   .services
     &__title
-      width: 300px
+      width: 254px
       font-size: 32px
+      text-align: center
     &__swiper-button-prev
       left: 33%
     &__swiper-button-next
       right: 33%
+
+// секция footer
+@media screen and (max-width: 1440px)
+  .footer
+    &__col
+      &:nth-of-type(2)
+        margin-left: -74px
+        margin-right: -61px
+@media screen and (max-width: 1198px)
+  .footer
+    &__col
+      &:nth-of-type(2)
+        margin-left: 0px
+        margin-right: 0px
+@media screen and (max-width: 990px)
+  .footer
+    &__col
+      &:nth-of-type(3)
+        display: none
+@media screen and (max-width: 766px)
+  .footer
+    &__bottom
+      .container
+        flex-direction: column
+        align-items: center
+        text-align: center
+    &__row
+      flex-direction: column
+      align-items: center
+    &__col
+      align-items: center !important
+      max-width: none !important
+      text-align: center
+    &__brand
+      text-align: left
+    &__title
+      max-width: none
+      margin-bottom: 9px
+    &__text
+      margin-bottom: 14px
+    &__social
+      margin-bottom: 30px
+      width: 104px
+    &__mobile
+      margin-bottom: 13px
+    &__app-link
+      display: inline-block
+      margin-right: 3px
+      margin-left: 3px
+    &__app-links
+      margin-bottom: 13px
+    &__link-profile
+      max-width: none
+      padding: 17px 46px
+      margin-bottom: 32px
+    &__brand
+      margin-bottom: 27px
+    &__tel
+      margin-bottom: 9px
+    &__email
+      margin-bottom: 38px
+    &__copyright
+      margin-bottom: 5px
+@media screen and (max-width: 574px)
+  .footer
+    &__title
+      span
+        display: block
