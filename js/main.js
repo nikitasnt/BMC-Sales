@@ -113,4 +113,15 @@ $(document).ready(function () {
       prevEl: ".services__swiper-button-prev"
     }
   });
+
+
+
+  // закрашивание звезд при наведении
+  $('.card__score .far').hover(function() {
+    $(this).addClass('fas');
+    $(this).removeClass('far');
+  }, function() {
+    $(this).addClass('far');
+    $(this).removeClass('fas');
+  });
 });
