@@ -640,3 +640,130 @@
     &__title
       span
         display: block
+
+// сеция product первая строка
+@media screen and (max-width: 1440px)
+  .product
+    &__col
+      &_photos
+        max-width: 460px
+    &__swiper-container
+      height: 460px
+    &__image
+      max-width: 200px
+    &__tab-method
+      label
+        display: block
+        max-width: 400px
+    &__in-garbage
+      padding-left: 18px
+    &__in-garbage, &__in-favorite, &__wholesale
+      padding: 13px 18px 14px 18px
+    &__wholesale
+      padding-left: 17px
+      padding-right: 17px
+@media screen and (max-width: 1198px)
+  .product
+    &__col
+      &_photos
+        max-width: 390px
+    &__swiper-container
+      height: 390px
+    &__nav-button
+      width: 68px
+      height: 68px
+      img 
+        max-width: 60%
+    &__in-garbage, &__in-favorite, &__wholesale
+      font-size: 15px
+    &__on-garbage
+      margin-right: 12px
+    &__social-link
+      margin-left: 10px
+@media screen and (max-width: 990px)
+  .product
+    &__row
+      flex-direction: column
+    &__col
+      width: auto
+      &_photos
+        margin: 0 auto
+        margin-bottom: 15px
+    &__in-garbage, &__in-favorite, &__wholesale
+      font-size: 14px
+  .hero
+    &__path
+      margin-top: 0
+  .path
+    &__link
+      font-size: 14px
+@media screen and (max-width: 574px)
+  .product
+    &__col
+      &_photos
+        max-width: none
+        width: 100%
+    &__color-select
+      flex-direction: column
+      align-items: flex-start
+      label
+        margin-bottom: 7px
+    &__color
+      align-items: flex-start
+      &-select
+        flex-direction: row;
+        flex-wrap: wrap
+    &__tab-method
+      max-width: none
+    &__image
+      max-width: 175px
+    &__nav-button
+      width: 54px
+      height: 54px
+    &__name
+      flex-wrap: wrap
+    &__title
+      margin-right: 20px
+    &__views
+      margin-left: 0
+    &__price-num
+      font-size: 29px
+      span
+        font-size: 15px
+    &__tab
+      padding-right: 18px
+      padding-bottom: 21px
+      &:last-of-type
+        padding-left: 55px
+        padding-right: 14px
+      &-method
+        label
+          max-width: none
+          width: 100%
+      &-item
+        margin-left: 0
+    &__buttons
+      flex-direction: column
+    &__in-garbage, &__in-favorite, &__wholesale
+      width: 100%
+      margin-bottom: 10px
+    &__wholesale
+      margin-bottom: 0
+    &__footer
+      flex-wrap: wrap
+    &__share
+      flex-wrap: wrap
+      margin-left: 0
+      margin-top: 10px
+      line-height: 20px
+  .path
+    flex-wrap: wrap
+    &__item
+      margin-right: 25px
+      margin-bottom: 6px
+@media screen and (max-width: 574px)
+  .product
+    &__tab-method
+      label
+        font-size: 11px
+        padding: 8px 11px 7px 35px

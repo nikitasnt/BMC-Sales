@@ -33,55 +33,6 @@ $(document).ready(function () {
 
 
 
-  // таймер
-  function countdown(dateEnd) {
-    var timer, days, hours, minutes, seconds;
-
-    dateEnd = new Date(dateEnd);
-    dateEnd = dateEnd.getTime();
-
-    if (isNaN(dateEnd)) {
-      return;
-    }
-
-    timer = setInterval(calculate, 1000);
-
-    function calculate() {
-      var dateStart = new Date();
-      var dateStart = new Date(dateStart.getUTCFullYear(),
-        dateStart.getUTCMonth(),
-        dateStart.getUTCDate(),
-        dateStart.getUTCHours(),
-        dateStart.getUTCMinutes(),
-        dateStart.getUTCSeconds());
-      var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
-
-      if (timeRemaining >= 0) {
-        days = parseInt(timeRemaining / 86400);
-        timeRemaining = (timeRemaining % 86400);
-        hours = parseInt(timeRemaining / 3600);
-        timeRemaining = (timeRemaining % 3600);
-        minutes = parseInt(timeRemaining / 60);
-        timeRemaining = (timeRemaining % 60);
-        seconds = parseInt(timeRemaining);
-
-
-        document.getElementById("days").innerHTML = parseInt(days, 10);
-        document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
-        document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
-        document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
-      } else {
-        return;
-      }
-    }
-
-    function display(days, hours, minutes, seconds) {}
-  }
-
-  countdown('05/10/2020 02:00:00 AM');
-
-
-
   // свайпер секции services
   var mySwiperServices = new Swiper('.services__swiper-container', {
     loop: true,
@@ -123,5 +74,82 @@ $(document).ready(function () {
   }, function() {
     $(this).addClass('far');
     $(this).removeClass('fas');
+  });
+  
+  // страницы product
+  $('.product__score .far').hover(function() {
+    $(this).addClass('fas');
+    $(this).removeClass('far');
+  }, function() {
+    $(this).addClass('far');
+    $(this).removeClass('fas');
+  });
+
+
+
+  // свайпер товара секции product
+  var mySwiperProduct = new Swiper('.product__swiper-container', {
+    
+  });
+
+  // переключение по нему с помощью кнопок
+  $('#nav-button-0').on('click', function () {
+    mySwiperProduct.slideTo(0);
+    $('#nav-button-0').addClass('product__nav-button_active');
+    $('#nav-button-1').removeClass('product__nav-button_active');
+    $('#nav-button-2').removeClass('product__nav-button_active');
+    $('#nav-button-3').removeClass('product__nav-button_active');
+    $('#nav-button-4').removeClass('product__nav-button_active');
+  });
+  $('#nav-button-1').on('click', function () {
+    mySwiperProduct.slideTo(1);
+    $('#nav-button-1').addClass('product__nav-button_active');
+    $('#nav-button-0').removeClass('product__nav-button_active');
+    $('#nav-button-2').removeClass('product__nav-button_active');
+    $('#nav-button-3').removeClass('product__nav-button_active');
+    $('#nav-button-4').removeClass('product__nav-button_active');
+  });
+  $('#nav-button-2').on('click', function () {
+    mySwiperProduct.slideTo(2);
+    $('#nav-button-2').addClass('product__nav-button_active');
+    $('#nav-button-0').removeClass('product__nav-button_active');
+    $('#nav-button-1').removeClass('product__nav-button_active');
+    $('#nav-button-3').removeClass('product__nav-button_active');
+    $('#nav-button-4').removeClass('product__nav-button_active');
+  });
+  $('#nav-button-3').on('click', function () {
+    mySwiperProduct.slideTo(3);
+    $('#nav-button-3').addClass('product__nav-button_active');
+    $('#nav-button-0').removeClass('product__nav-button_active');
+    $('#nav-button-1').removeClass('product__nav-button_active');
+    $('#nav-button-2').removeClass('product__nav-button_active');
+    $('#nav-button-4').removeClass('product__nav-button_active');
+  });
+  $('#nav-button-4').on('click', function () {
+    mySwiperProduct.slideTo(4);
+    $('#nav-button-4').addClass('product__nav-button_active');
+    $('#nav-button-0').removeClass('product__nav-button_active');
+    $('#nav-button-1').removeClass('product__nav-button_active');
+    $('#nav-button-2').removeClass('product__nav-button_active');
+    $('#nav-button-3').removeClass('product__nav-button_active');
+  });
+
+
+
+  // табы доставки секции product
+  $(".product__tab-item").not(":nth-of-type(2)").hide();
+  $(".product__delivery .product__tab").click(function() {
+    $(".product__delivery .product__tab").removeClass("product__delivery_active").eq($(this).index()).addClass("product__delivery_active");
+    $(".product__tab-item").hide().eq($(this).index()).fadeIn();
+  }).eq(0).addClass("product__delivery_active");
+
+  // класс активного таба
+  $('#delivery-tab-1').on('click', function() {
+    $('#delivery-tab-1').addClass('product__tab_active');
+    $('#delivery-tab-2').removeClass('product__tab_active');
+  });
+  $('#delivery-tab-2').on('click', function() {
+    $('#delivery-tab-2').addClass('product__tab_active');
+    $('#delivery-tab-1').removeClass('product__tab_active');
   });
 });

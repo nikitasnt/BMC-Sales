@@ -1,0 +1,306 @@
+.product
+  &__row
+    display: flex
+    justify-content: space-between
+    &:first-of-type
+      margin-top: 60px
+  &__col
+    &_photos
+      max-width: 549px
+      width: 41%
+    &_description
+      width: 59%
+      max-width: 787px
+      margin-top: -4px
+  
+  &__swiper-container
+    height: 549px
+    border: 1px solid #d7d7d7
+    margin-bottom: 31px
+  &__swiper-slide
+    display: flex
+    justify-content: center
+    align-items: center
+  &__image
+    max-width: 229px
+  &__swiper-navigation
+    display: flex
+    justify-content: space-between
+  &__nav-button
+    width: 87px
+    height: 87px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #d7d7d7
+    background-color: $white
+    outline: none
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+      border: 1px solid $orange
+    &_active
+      border: 1px solid $orange
+  
+  &__name
+    display: flex
+    align-items: baseline
+    border-bottom: 1px solid #d7d7d7
+    padding-bottom: 21px
+  &__title
+    margin: 0
+    font-family: 'DINPro-Bold', sans-serif
+    font-weight: 700
+    color: $dark
+    font-size: 24px
+  &__views
+    color: #919191
+    margin-left: auto
+    margin-right: 16px
+    span
+      font-family: 'DINPro-Bold', sans-serif
+      font-weight: 700
+  &__score
+    color: #919191
+    letter-spacing: 1.1px
+    .fas
+      color: $orange
+
+  &__price
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px dashed #d7d7d7
+    padding-top: 31px
+    padding-bottom: 32px
+    &-num
+      font-family: 'DINPro-Bold', sans-serif
+      color: $dark
+      font-weight: 700
+      font-size: 48px
+      span
+        font-size: 24px
+    &-count
+      display: block
+      color: #919191
+      font-size: 16px
+      margin-top: 13px
+      span
+        font-family: "DINPro-Bold", sans-serif
+        font-weight: 700
+        color: $dark
+  &__qr-code
+    max-width: 88px
+    margin-top: 3px
+
+  &__color
+    display: flex
+    align-items: center
+    border-bottom: 1px dashed #d7d7d7
+    padding-top: 30px
+    padding-bottom: 30px
+    &-title
+      color: $dark
+      font-size: 16px
+      margin-right: 30px
+    &-select
+      display: flex
+      align-items: center
+      input
+        display: none
+        &:checked + label
+          border: 1px solid $orange
+      label
+        position: relative
+        color: $dark
+        transition: 0.2s
+        cursor: pointer
+        border: 1px solid #d7d7d7
+        height: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 11px 18.7px 13px 48px
+        margin-right: 10px
+        &:hover
+          border: 1px solid $orange
+        &::before
+          content: ''
+          position: absolute
+          display: block
+          width: 26px
+          height: 26px
+          left: 1px
+          top: 1px
+        &:nth-of-type(1)
+          &::before
+            background-color: #86c255
+        &:nth-of-type(2)
+          &::before
+            background-color: #e9eb5b
+        &:nth-of-type(3)
+          &::before
+            background-color: #e84b4b
+        &:nth-of-type(4)
+          &::before
+            background-color: #4b91e8
+  
+  &__delivery
+    border-bottom: 1px dashed #d7d7d7
+    padding-top: 26px
+    padding-bottom: 30px
+    &-text
+      color: $dark
+      font-size: 16px
+  &__tabs
+    margin-top: 30px
+    input
+      display: none
+      &:checked + label
+        &::after
+          content: ''
+          top: 6px
+          left: 5px
+          position: absolute
+          width: 10px
+          height: 10px
+          background-color: $dark
+          border-radius: 50%
+        &:last-of-type
+          &::after
+            left: 35px
+  &__tab
+    position: relative
+    cursor: pointer
+    font-size: 16px
+    color: $dark
+    padding-left: 31px
+    padding-bottom: 21px
+    padding-right: 29px
+    border-bottom: 1px solid #d7d7d7
+    &_active
+      border-bottom: 2px solid $white
+      border-right: 1px solid #d7d7d7
+    &:first-of-type
+      border-right: 1px solid #d7d7d7
+    &:last-of-type
+      padding-left: 60px
+      padding-right: 46px
+      margin-left: -4px
+      &::before
+        top: 1px
+        left: 30px
+    &::before
+      content: ''
+      position: absolute
+      top: 1px
+      left: 0
+      box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2)
+      border: 1px solid #cccccc
+      background-color: $white
+      width: 20px
+      height: 20px
+      border-radius: 50%
+    &-text
+      font-size: 16px
+      color: $dark
+    &-method
+      margin-top: 22px
+      input
+        display: none
+        &:checked + label
+          border: 1px solid $orange
+          &::after
+            content: ''
+            top: 8px
+            left: 12px
+            position: absolute
+            width: 10px
+            height: 10px
+            background-color: $dark
+            border-radius: 50%
+      label
+        display: inline-block
+        color: $dark
+        position: relative
+        padding: 3px 11px 7px 35px
+        border: 1px solid #d7d7d7
+        cursor: pointer
+        transition: 0.2s
+        &:hover
+          border: 1px solid $orange
+        &::before
+          content: ''
+          position: absolute
+          top: 3px
+          left: 7px
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2)
+          border: 1px solid #cccccc
+          background-color: $white
+          width: 20px
+          height: 20px
+          border-radius: 50%
+        &:first-of-type
+          margin-right: 5px
+          margin-bottom: 5px
+    &-content
+      margin-top: 22px
+      border-top: 1px solid #d7d7d7
+    &-item
+      margin-left: 31px
+      margin-top: 25px
+  
+  &__buttons
+    display: flex
+    border-bottom: 1px dashed #d7d7d7
+    padding-top: 26px
+    padding-bottom: 30px
+  &__in-garbage, &__in-favorite, &__wholesale
+    font-size: 18px
+    color: $dark
+    outline: none
+    border: 2px solid $dark
+    background-color: $white
+    padding: 13px 35px 14px 19px
+    transition: 0.3s
+    &:hover
+      background-color: $dark
+      color: $white
+    i 
+      font-size: 16px
+      margin-right: 14px
+  &__in-garbage
+    margin-right: 20px
+    background-color: $orange
+    color: $white
+    border: 2px solid $orange
+    padding-left: 24px
+    &:hover
+      background-color: #fff
+      color: $orange
+  &__wholesale
+    margin-left: auto
+    padding-left: 25px
+    padding-right: 28px
+  
+  &__footer
+    display: flex
+    padding-top: 26px
+    &-text
+      color: $dark
+  &__on-garbage, &__on-favorite
+    color: $dark
+    span
+      font-family: "DINPro-Bold"
+      font-weight: 700
+  &__on-garbage
+    margin-right: 30px
+  &__share
+    display: flex
+    margin-left: auto
+  &__social-link
+    color: #919191
+    font-size: 16px
+    transition: 0.3s
+    margin-left: 16px
+    &:hover
+      color: $dark
