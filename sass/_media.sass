@@ -767,3 +767,76 @@
       label
         font-size: 11px
         padding: 8px 11px 7px 35px
+
+// сеция product вторая строка
+@media screen and (max-width: 1440px)
+  .product
+    &__col
+      &_table
+        max-width: 840px
+@media screen and (max-width: 1198px)
+  .product
+    &__col
+      &_table
+        max-width: 722px
+@media screen and (max-width: 990px)
+  .product
+    &__col
+      &_table
+        max-width: none
+      &_recent
+        display: none
+  .t-wrapper
+    &__tab
+      font-size: 16px
+      padding: 13px 27px 13px 27px
+      &:nth-of-type(2)
+        padding-left: 27px
+        padding-right: 27px
+@media screen and (max-width: 766px)
+  .product
+    &__tab
+      font-size: 14px
+    &-table
+      &__col
+        &_left
+          font-size: 14px
+          padding-top: 11px
+          padding-bottom: 11px
+        &_right
+          font-size: 14px
+  .t-wrapper
+    &__tab
+      font-size: 14px
+      &-item
+        padding: 16px 26px 7px 26px
+@media screen and (max-width: 574px)
+  .product
+    &__row
+      &:last-of-type
+        margin-top: 35px
+  .product-table
+    &__col
+      font-size: 12px
+  .t-wrapper
+    &__tab
+      font-size: 12px
+      padding: 9px 4px 9px 4px
+      &:nth-of-type(2)
+        padding-left: 4px
+        padding-right: 4px
+      &:last-of-type
+        padding-left: 4px
+@media screen and (max-width: 385px)
+  .product-table
+    &__col
+      font-size: 10px
+  .t-wrapper
+    &__tab
+      font-size: 10px
+      padding: 9px 2px 9px 2px
+      &:nth-of-type(2)
+        padding-left: 2px
+        padding-right: 2px
+      &:last-of-type
+        padding-left: 2px

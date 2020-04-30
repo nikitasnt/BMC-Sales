@@ -85,6 +85,15 @@ $(document).ready(function () {
     $(this).removeClass('fas');
   });
 
+  // страницы product столба с недавними
+  $('.recent-card__score .far').hover(function() {
+    $(this).addClass('fas');
+    $(this).removeClass('far');
+  }, function() {
+    $(this).addClass('far');
+    $(this).removeClass('fas');
+  });
+
 
 
   // свайпер товара секции product
@@ -152,4 +161,13 @@ $(document).ready(function () {
     $('#delivery-tab-2').addClass('product__tab_active');
     $('#delivery-tab-1').removeClass('product__tab_active');
   });
+
+
+
+  // табы таблиц секции product
+  $(".t-wrapper__tab-item").not(":first").hide();
+  $(".t-wrapper .t-wrapper__tab").click(function() {
+    $(".t-wrapper .t-wrapper__tab").removeClass("t-wrapper__tab_active").eq($(this).index()).addClass("t-wrapper__tab_active");
+    $(".t-wrapper__tab-item").hide().eq($(this).index()).fadeIn();
+  }).eq(0).addClass("t-wrapper__tab_active");
 });

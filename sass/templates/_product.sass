@@ -4,6 +4,8 @@
     justify-content: space-between
     &:first-of-type
       margin-top: 60px
+    &:last-of-type
+      margin-top: 99px
   &__col
     &_photos
       max-width: 549px
@@ -12,6 +14,13 @@
       width: 59%
       max-width: 787px
       margin-top: -4px
+    &_table
+      width: 75%
+      max-width: 1017px
+    &_recent
+      width: 25%
+      max-width: 318px
+      margin-top: -3px
   
   &__swiper-container
     height: 549px
@@ -304,3 +313,103 @@
     margin-left: 16px
     &:hover
       color: $dark
+
+.t-wrapper
+  &__tab
+    cursor: pointer
+    font-size: 18px
+    color: $dark
+    letter-spacing: 0.28px
+    padding: 15px 43px 15px 43px
+    display: inline-block
+    transition: 0.2s
+    &:nth-of-type(2)
+      padding-left: 45px
+      padding-right: 22px
+    &:last-of-type
+      padding-left: 27px
+    &_active
+      background-color: #f5f5f5
+    &-item
+      padding: 21px 52px 19px 40px
+      background-color: #f5f5f5
+.product-table
+  width: 100%
+  border-collapse: collapse
+  &__row
+    border-bottom: 1px solid #e1e1e1
+    &:last-of-type
+      border-bottom: none
+  &__col
+    &_left
+      font-size: 18px
+      letter-spacing: 0.18px
+      color: $dark
+      padding-top: 17px
+      padding-bottom: 16px
+    &_right
+      font-size: 18px
+      letter-spacing: 0.18px
+      font-family: 'DINPro-Bold', sans-serif
+      font-weight: 700
+
+.product
+  &__recent
+    &-title
+      margin: 0
+      margin-bottom: 35px
+      font-size: 18px
+      color: $dark
+      text-transform: uppercase
+      font-family: 'DINPro-Medium', sans-serif
+      font-weight: 500
+      letter-spacing: 0.18px
+    &-card
+      &:first-of-type
+        padding-bottom: 27px
+      &:nth-of-type(2)
+        padding-top: 31px
+        padding-bottom: 27px
+      &:last-of-type
+        padding-top: 31px
+.recent-card
+  border-bottom: 1px solid #d7d7d7
+  &:last-of-type
+    border-bottom: none
+  &__link
+    display: flex
+    text-decoration: none
+    align-items: flex-start
+  &__image
+    max-width: 87px
+    margin-right: 29px
+  &__text
+    display: flex
+    flex-direction: column
+    margin-top: -4px
+  &__name
+    margin: 0
+    font-size: 16px
+    color: $dark
+    margin-bottom: 7px
+  &__type
+    font-size: 14px
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    margin-bottom: 15px
+    color: #919191
+  &__score
+    font-size: 14px
+    color: #919191
+    letter-spacing: 1.1px
+    margin-bottom: 13px
+    i
+      transition: 0.3s
+    .fas
+      color: $orange
+  &__price
+    font-size: 24px
+    color: $dark
+    font-weight: 400
+    span
+      font-size: 16px
