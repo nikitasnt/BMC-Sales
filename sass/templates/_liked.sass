@@ -1,0 +1,53 @@
+.liked
+  &__title
+    position: relative
+    display: block
+    margin: 0 auto
+    width: 483px
+    font-family: 'DINPro-Light', sans-serif
+    font-weight: 300
+    font-size: 36px
+    margin-top: 89px
+    margin-bottom: 41px
+    &::before
+      content: ''
+      position: absolute
+      width: 388px
+      height: 14px
+      background: url('../img/liked/title-left.svg') no-repeat 100% / contain
+      left: -428px
+      top: 18px
+    &::after
+      content: ''
+      position: absolute
+      width: 388px
+      height: 14px
+      background: url('../img/liked/title-right.svg') no-repeat 100% / contain
+      right: -428px
+      top: 18px
+  &__swiper-button-next, &__swiper-button-prev
+    width: 45px
+    height: 45px
+    border: 1px solid #cccccc
+    color: #cccccc
+    font-size: 36px
+    transition: 0.3s
+    outline: none
+    cursor: pointer
+    top: auto
+    bottom: 0
+    &:hover
+      border: 1px solid $dark
+      background-color: $dark
+      color: $white
+    &::after
+      display: none
+  &__swiper-button-prev
+    left: 46.2%
+    i 
+      margin-left: -2px
+  &__swiper-button-next
+    right: 46.5%
+  &__swiper-container
+    padding-left: 10px
+    padding-bottom: 112px

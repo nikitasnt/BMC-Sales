@@ -840,3 +840,78 @@
         padding-right: 2px
       &:last-of-type
         padding-left: 2px
+
+// секция liked
+@media screen and (max-width: 1440px)
+  .liked
+    &__title
+      &::before
+        width: 258.7px
+        height: 9.3px
+        left: -290px
+      &::after
+        width: 258.7px
+        height: 9.3px
+        right: -280px
+    &__swiper-button-prev
+      left: 45.5%
+    &__swiper-button-next
+      right: 45.5%
+@media screen and (max-width: 1198px)
+  .liked
+    &__title
+      &::before
+        display: none
+      &::after
+        display: none
+    &__swiper-button-prev
+      left: 45%
+    &__swiper-button-next
+      right: 45%
+@media screen and (max-width: 990px)
+  .liked
+    &__swiper-button-prev
+      left: 43%
+    &__swiper-button-next
+      right: 43%
+    .card
+      &__title
+        font-size: 17px
+      &__price 
+        font-size: 25px
+@media screen and (max-width: 766px)
+  .liked
+    &__swiper-button-prev
+      left: 41%
+    &__swiper-button-next
+      right: 41%
+@media screen and (max-width: 574px)
+  .liked
+    &__title
+      width: 238px
+      font-size: 32px
+      text-align: center
+    &__swiper-button-prev
+      left: 33%
+    &__swiper-button-next
+      right: 33%
+@media screen and (max-width: 574px)
+  .liked
+    .card
+      &__title
+        font-size: 15px
+      &__price
+        font-size: 22px
+@media screen and (max-width: 495px)
+  .liked
+    .card
+      max-width: none
+      &__image-box
+        max-height: none;
+      &__image
+        img 
+          width: 100%
+      &__title
+        font-size: 18px
+      &__price
+        font-size: 30px

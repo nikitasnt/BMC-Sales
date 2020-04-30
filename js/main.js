@@ -67,6 +67,40 @@ $(document).ready(function () {
 
 
 
+  // свайпер секции liked
+  var mySwiperLiked = new Swiper('.liked__swiper-container', {
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is >= 640px
+      495: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 15
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 25
+      }
+    },
+    navigation: {
+      nextEl: ".liked__swiper-button-next",
+      prevEl: ".liked__swiper-button-prev"
+    }
+  });
+
+
+
   // закрашивание звезд при наведении
   $('.card__score .far').hover(function() {
     $(this).addClass('fas');
