@@ -380,6 +380,9 @@
     display: flex
     text-decoration: none
     align-items: flex-start
+    &:hover
+      .recent-card__name
+        color: $orange
   &__image
     max-width: 87px
     margin-right: 29px
@@ -392,6 +395,7 @@
     font-size: 16px
     color: $dark
     margin-bottom: 7px
+    transition: 0.3s
   &__type
     font-size: 14px
     font-family: 'DINPro-Light', sans-serif

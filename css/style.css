@@ -2621,6 +2621,10 @@ img {
           align-items: flex-start;
 }
 
+.recent-card__link:hover .recent-card__name {
+  color: #f47920;
+}
+
 .recent-card__image {
   max-width: 87px;
   margin-right: 29px;
@@ -2644,6 +2648,8 @@ img {
   font-size: 16px;
   color: #202020;
   margin-bottom: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .recent-card__type {
