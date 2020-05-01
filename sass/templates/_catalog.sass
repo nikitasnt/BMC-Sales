@@ -1,0 +1,132 @@
+.catalog
+  &__row
+    display: flex
+    justify-content: space-between
+    margin-top: 14px
+  &__col
+    &_categories
+      width: 25%
+      max-width: 320px
+    &_products
+      width: 75%
+      max-width: 1019px
+      margin-top: 48px
+  &__title
+    font-weight: 300
+    color: $dark
+    font-size: 24px
+    margin: 0
+    border-bottom: 1px solid #d7d7d7
+    padding-bottom: 21px
+    margin-bottom: 30px
+  &__categ-btn
+    background-color: #f6f6f6
+    outline: none
+    display: block
+    height: 60px
+    width: 100%
+    border-radius: 5px
+    border: none
+    font-size: 16px
+    font-weight: 500
+    color: $dark
+    transition: 0.3s
+    cursor: pointer
+    text-align: left
+    padding-left: 21px
+    margin-bottom: 7px
+    &:last-of-type
+      margin-bottom: 30px
+    i 
+      font-size: 18px
+      color: #919191
+      transition: 0.3s
+      margin-right: 24px
+    &:hover
+      background-color: $orange
+      color: $white
+      i 
+        color: $white
+    &_active
+      background-color: $orange
+      color: $white
+      i 
+        color: $white
+  &__nav
+    list-style-type: none
+    padding: 0
+    margin: 0
+    &-item
+      margin-bottom: 18px
+    &-link 
+      color: $dark
+      text-decoration: none
+      transition: 0.3s
+      font-size: 16px
+      font-family: 'DINPro-Medium', sans-serif
+      font-weight: 500
+      &:hover
+        color: #919191
+      &_active
+        color: $orange
+        text-decoration: underline
+        &:hover
+          color: $orange
+  
+  &__grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .card
+      margin-bottom: 53px
+  &__text
+    text-align: center
+    color: #919191
+    font-size: 16px
+    font-family: "DINPro-Light", sans-serif
+    font-weight: 300
+    margin: 0
+    margin-top: -8px
+    margin-bottom: 31px
+    span
+      font-family: "DINPro-Bold", sans-serif
+      font-weight: 700
+  &__pagination
+    display: flex
+    justify-content: center
+  &__pag
+    &-link
+      display: flex
+      align-items: center
+      justify-content: center
+      text-decoration: none
+      width: 45px
+      height: 45px
+      border: 2px solid $dark
+      color: $dark
+      transition: 0.3s
+      font-weight: 500
+      font-family: 'DINPro-Medium', sans-serif
+      margin-right: 10px
+      &:hover
+        color: $orange
+        border: 2px solid $orange
+      &_active
+        background-color: #e7e7e7
+        border: 2px solid #e7e7e7
+    &-next 
+      width: 45px
+      height: 45px
+      background-color: $orange
+      border: 2px solid $orange
+      outline: none
+      cursor: pointer
+      color: $white
+      transition: 0.3s
+      &:hover
+        background-color: $white
+        color: $orange
+  
+.hero
+  &__sorting_categories
+    display: none

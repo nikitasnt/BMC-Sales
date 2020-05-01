@@ -102,30 +102,87 @@ $(document).ready(function () {
 
 
   // закрашивание звезд при наведении
-  $('.card__score .far').hover(function() {
+  $('.card__score .fa-star').hover(function() {
     $(this).addClass('fas');
     $(this).removeClass('far');
+    $(this).prev().addClass('fas');
+    $(this).prev().removeClass('far');
+    $(this).prev().prev().addClass('fas');
+    $(this).prev().prev().removeClass('far');
+    $(this).prev().prev().prev().addClass('fas');
+    $(this).prev().prev().prev().removeClass('far');
+    $(this).prev().prev().prev().prev().addClass('fas');
+    $(this).prev().prev().prev().prev().removeClass('far');
+    $(this).next().addClass('far');
+    $(this).next().removeClass('fas');
+    $(this).next().next().addClass('far');
+    $(this).next().next().removeClass('fas');
+    $(this).next().next().next().addClass('far');
+    $(this).next().next().next().removeClass('fas');
+    $(this).next().next().next().next().addClass('far');
+    $(this).next().next().next().next().removeClass('fas');
   }, function() {
-    $(this).addClass('far');
-    $(this).removeClass('fas');
+    $('.card__score .fa-star').removeClass('fas');
+    $('.card__score .fa-star').addClass('far');
+    $('.appreciated .fa-star:nth-of-type(1)').addClass('fas');
+    $('.appreciated .fa-star:nth-of-type(2)').addClass('fas');
+    $('.appreciated .fa-star:nth-of-type(3)').addClass('fas');
   });
   
   // страницы product
-  $('.product__score .far').hover(function() {
+  $('.product__score .fa-star').hover(function() {
     $(this).addClass('fas');
     $(this).removeClass('far');
+    $(this).prev().addClass('fas');
+    $(this).prev().removeClass('far');
+    $(this).prev().prev().addClass('fas');
+    $(this).prev().prev().removeClass('far');
+    $(this).prev().prev().prev().addClass('fas');
+    $(this).prev().prev().prev().removeClass('far');
+    $(this).prev().prev().prev().prev().addClass('fas');
+    $(this).prev().prev().prev().prev().removeClass('far');
+    $(this).next().addClass('far');
+    $(this).next().removeClass('fas');
+    $(this).next().next().addClass('far');
+    $(this).next().next().removeClass('fas');
+    $(this).next().next().next().addClass('far');
+    $(this).next().next().next().removeClass('fas');
+    $(this).next().next().next().next().addClass('far');
+    $(this).next().next().next().next().removeClass('fas');
   }, function() {
-    $(this).addClass('far');
-    $(this).removeClass('fas');
+    $('.product__score .fa-star').removeClass('fas');
+    $('.product__score .fa-star').addClass('far');
+    $('.appreciated .fa-star:nth-of-type(1)').addClass('fas');
+    $('.appreciated .fa-star:nth-of-type(2)').addClass('fas');
+    $('.appreciated .fa-star:nth-of-type(3)').addClass('fas');
   });
 
   // страницы product столба с недавними
-  $('.recent-card__score .far').hover(function() {
+  $('.recent-card__score .fa-star').hover(function() {
     $(this).addClass('fas');
     $(this).removeClass('far');
+    $(this).prev().addClass('fas');
+    $(this).prev().removeClass('far');
+    $(this).prev().prev().addClass('fas');
+    $(this).prev().prev().removeClass('far');
+    $(this).prev().prev().prev().addClass('fas');
+    $(this).prev().prev().prev().removeClass('far');
+    $(this).prev().prev().prev().prev().addClass('fas');
+    $(this).prev().prev().prev().prev().removeClass('far');
+    $(this).next().addClass('far');
+    $(this).next().removeClass('fas');
+    $(this).next().next().addClass('far');
+    $(this).next().next().removeClass('fas');
+    $(this).next().next().next().addClass('far');
+    $(this).next().next().next().removeClass('fas');
+    $(this).next().next().next().next().addClass('far');
+    $(this).next().next().next().next().removeClass('fas');
   }, function() {
-    $(this).addClass('far');
-    $(this).removeClass('fas');
+    $('.recent-card__score .fa-star').removeClass('fas');
+    $('.recent-card__score .fa-star').addClass('far');
+    $('.appreciated .fa-star:nth-of-type(1)').addClass('fas');
+    $('.appreciated .fa-star:nth-of-type(2)').addClass('fas');
+    $('.appreciated .fa-star:nth-of-type(3)').addClass('fas');
   });
 
 
@@ -204,4 +261,21 @@ $(document).ready(function () {
     $(".t-wrapper .t-wrapper__tab").removeClass("t-wrapper__tab_active").eq($(this).index()).addClass("t-wrapper__tab_active");
     $(".t-wrapper__tab-item").hide().eq($(this).index()).fadeIn();
   }).eq(0).addClass("t-wrapper__tab_active");
+
+
+
+  // навигационное меню страницы catalog слева
+  $('.catalog__nav-link').on('click', function(event) {
+    event.preventDefault();
+    $('.catalog__categ-btn').removeClass('catalog__categ-btn_active');
+    $('.catalog__nav-link').removeClass('catalog__nav-link_active');
+    $(this).addClass('catalog__nav-link_active');
+  });
+
+  $('.catalog__categ-btn').on('click', function(event) {
+    event.preventDefault();
+    $('.catalog__categ-btn').removeClass('catalog__categ-btn_active');
+    $('.catalog__nav-link').removeClass('catalog__nav-link_active');
+    $(this).addClass('catalog__categ-btn_active');
+  });
 });

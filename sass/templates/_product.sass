@@ -113,6 +113,7 @@
       margin-right: 30px
     &-select
       display: flex
+      flex-wrap: wrap
       align-items: center
       input
         display: none
@@ -129,7 +130,8 @@
         align-items: center
         justify-content: center
         padding: 11px 18.7px 13px 48px
-        margin-right: 10px
+        &:not(:last-of-type)
+          margin-right: 10px
         &:hover
           border: 1px solid $orange
         &::before

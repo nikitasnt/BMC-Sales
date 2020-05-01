@@ -915,3 +915,113 @@
         font-size: 18px
       &__price
         font-size: 30px
+
+// секция catalog
+@media screen and (max-width: 1440px)
+  .catalog
+    &__col
+      &_products
+        max-width: 858px
+@media screen and (max-width: 1198px)
+  .catalog
+    &__col
+      &_categories
+        max-width: 228px
+    &__nav-link
+      font-size: 14px
+    &__categ-btn
+      height: 48px
+      font-size: 14px
+      i 
+        font-size: 16px
+@media screen and (max-width: 990px)
+  .hero
+    &__path-sort
+      align-items: baseline
+  .catalog
+    &__grid
+      .card
+        max-width: 240px
+        margin-bottom: 30px
+        &:nth-of-type(8) ~ .card
+          display: none
+        &__price
+          font-size: 25px
+    &__title
+      font-size: 20px
+    &__categ-btn
+      height: 40px
+@media screen and (max-width: 766px)
+  .hero
+    &__sortings
+      margin-top: 0
+      flex-direction: column
+      align-self: center
+    &__sorting
+      margin-top: 14px
+      &:nth-of-type(2)
+        margin-left: 0
+      &_categories
+        display: block
+    &__select
+      &_second
+        width: 100%
+    &__path-sort
+      flex-direction: column
+  .catalog
+    &__col
+      &_categories
+        display: none
+      &_products
+        width: auto
+    &__grid
+      .card
+        max-width: 244px
+        &__image-box
+          max-height: 244px
+@media screen and (max-width: 574px)
+  .catalog
+    &__grid
+      .card
+        margin-bottom: 40px
+        max-width: 213px
+        &__image-box
+          max-height: 213px
+@media screen and (max-width: 538px)
+  .catalog
+    &__col
+      &_products
+        width: 100%
+    &__grid
+      flex-direction: column
+      align-items: center
+      .card
+        max-width: 319px
+        &__image-box
+          max-height: 319px
+        &__price
+          font-size: 30px
+@media screen and (max-width: 420px)
+  .hero
+    &__sortings
+      width: 100%
+    &__select
+      width: 100%
+      padding: 9px 19px
+  .catalog
+    &__grid
+      .card
+        margin-bottom: 70px
+        max-width: none
+        &__image-box
+    &__pag
+      &-link 
+        width: 56px
+        height: 33px
+      &-next
+        width: 56px
+        height: 33px
+@media screen and (max-width: 335px)
+  .catalog
+    &__text
+      font-size: 15px

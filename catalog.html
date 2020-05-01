@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMC Sales</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="menu">
+        <a href="#" class="menu__logo">
+          <img src="img/logo.png" alt="Лого">
+        </a>
+        <h2 class="menu__title">BMC Sales</h2>
+        <nav class="menu__nav nav">
+          <a href="#" class="nav__item">Соц. сети<i class="fas fa-comment-dots nav__icon"></i></a>
+          <a href="#" class="nav__item">Торгов. сети<i class="fas fa-cart-arrow-down nav__icon"></i></a>
+          <a href="#" class="nav__item">Туристич. сети<i class="fas fa-globe nav__icon"></i></a>
+          <a href="#" class="nav__item">Ассоциации<i class="fas fa-eye nav__icon"></i></a>
+          <a href="#" class="nav__item">Сервисы<i class="fas fa-wrench nav__icon"></i></a>
+          <a href="#" class="nav__mobile"><i class="fab fa-android"></i></a>
+          <div class="nav__flags">
+            <a href="#" class="nav__flag">
+              <i class="far fa-heart"></i>
+              <span>0</span>
+            </a>
+            <a href="#" class="nav__flag nav__flag_second">
+              <i class="fas fa-shopping-bag"></i>
+              <span>2</span>
+            </a>
+          </div>
+        </nav>
+        <button class="menu__button">Вход на сайт<i class="fas fa-lock menu__button-icon"></i></button>
+        <div class="header__burger">
+          <span></span>
+        </div>
+      </div>
+      <!-- /.menu -->
+      <div class="flag header__flag">
+        <span class="flag__icon"><i class="fas fa-shopping-bag"></i></span>
+        <span class="flag__num">0</span>
+      </div>
+      <div class="flag header__flag header__flag_transparent">
+        <span class="flag__icon"><i class="far fa-heart"></i></span>
+        <span class="flag__num">2</span>
+      </div>
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+
+  <main>
+    <section class="section hero hero_product">
+      <h1 style="display: none;">for success validation</h1>
+      <div class="container">
+        <div class="hero__top">
+          <a href="#" class="hero__brand brand">
+            <div class="brand__logo">
+              <img src="img/logo.png" alt="Лого">
+            </div>
+            <div class="brand__text">
+              <strong class="brand__name">BMC Sales</strong>
+              <span class="brand__description">партнерская сеть продаж</span>
+            </div>
+          </a>
+          <!-- /.hero__brand -->
+          <nav class="hero__link-bar">
+            <a href="#" class="hero__link">Объявления</a>
+            <a href="#" class="hero__link hero__link_list">Каталоги<i class="fas fa-angle-down"></i></a>
+            <a href="#" class="hero__link">Участники</a>
+            <a href="#" class="hero__link">Партнеры</a>
+            <a href="#" class="hero__link">О платформе</a>
+            <a href="#" class="hero__link">Новости</a>
+            <a href="#" class="hero__link"><i class="fas fa-search"></i></a>
+          </nav>
+          <!-- /.hero__link-bar -->
+        </div>
+        <!-- /.hero__top -->
+        <div class="hero__path-sort">
+          <ul class="hero__path path">
+            <li class="path__item">
+              <a href="#" class="path__link">Главная</a>
+            </li>
+            <li class="path__item">
+              <a href="#" class="path__link">Каталог</a>
+            </li>
+          </ul>
+          <!-- /.hero__path path -->
+          <div class="hero__sortings">
+            <div class="hero__sorting">
+              <span class="hero__sort-name">Сортировать по:</span>
+              <select class="hero__select">
+                <option class="hero__option">Сначала новые</option>
+                <option class="hero__option">Сначала старые</option>
+                <option class="hero__option">Сначала популярные</option>
+                <option class="hero__option">Сначала дешевле</option>
+                <option class="hero__option">Сначала дороже</option>
+              </select>
+            </div>
+            <div class="hero__sorting">
+              <span class="hero__sort-name">Товаров на стр.:</span>
+              <select class="hero__select hero__select_second">
+                <option class="hero__option">24 на странице</option>
+                <option class="hero__option">18 на странице</option>
+                <option class="hero__option">12 на странице</option>
+              </select>
+            </div>
+            <div class="hero__sorting hero__sorting_categories">
+              <span class="hero__sort-name">Категории товаров:</span>
+              <select class="hero__select hero__select_second">
+                <option class="hero__option">Одежда</option>
+                <option class="hero__option">Обувь</option>
+                <option class="hero__option">Развлечения, досуг</option>
+                <option class="hero__option">Посуда и зеркала</option>
+                <option class="hero__option">Парфюмерия и косметика</option>
+                <option class="hero__option">Оптика</option>
+                <option class="hero__option">Мебель</option>
+                <option class="hero__option">Компьютерная техника</option>
+                <option class="hero__option">Кож.галантерея</option>
+                <option class="hero__option">Канцелярские товары</option>
+                <option class="hero__option">Источники света</option>
+                <option class="hero__option">Инструменты</option>
+                <option class="hero__option">Здоровье</option>
+                <option class="hero__option">Животные и растения</option>
+                <option class="hero__option">Дача и сад</option>
+                <option class="hero__option">Бытовая химия</option>
+                <option class="hero__option">Сельскохозяйственная продукция и сырье</option>
+                <option class="hero__option">Авто</option>
+                <option class="hero__option">Очки</option>
+                <option class="hero__option">Мобильные телефоны</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.hero__sortings -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section hero -->
+
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__row">
+          <div class="catalog__col catalog__col_categories">
+            <h2 class="catalog__title">Категории товаров</h2>
+            <button class="catalog__categ-btn catalog__categ-btn_active"><i class="fas fa-tshirt"></i>Одежда</button>
+            <button class="catalog__categ-btn"><i class="fas fa-shoe-prints"></i>Обувь</button>
+            <ul class="catalog__nav">
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Развлечения, досуг</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Посуда и зеркала</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Парфюмерия и косметика</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Оптика</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Мебель</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Компьютерная техника</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Кож. галантерея</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Канцелярские товары</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Источники света</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Инструменты</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Здоровье</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Животные и растения</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Дача и сад</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Бытовая химия</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Сельскохозяйственная продукция и сырье</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Авто</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Очки</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Мобильные телефоны</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Средства личной гигиены</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Строительные материалы</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Сувениры</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Электротовары</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Ювелирные изделия</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Домашний текстиль, ковры</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Туризм и спорт</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Сумки, кошельки</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Разное</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Одежда</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Обувь</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Продукты питания</a></li>
+              <li class="catalog__nav-item"><a href="#" class="catalog__nav-link">Книги</a></li>
+            </ul>
+          </div>
+          <!-- /.catalog__col catalog__col_categories -->
+          <div class="catalog__col catalog__col_products">
+            <div class="catalog__grid">
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/shirt.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Блузка модель 111<span>Женская одежда</span></h4>
+                <span class="card__score appreciated">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">3 000.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/jacket.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Пуховик артикул: 2801<span>Пуховики</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">21 200.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/trainers.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Обувь Т 452<span>Женская Обувь</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">12 555.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/backpack.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Рюкзак PUMA<span>Рюкзаки</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">5 000.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/shoes.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">40%</span>
+                </div>
+                <h4 class="card__title">Туфли детские 555<span>Детская обувь</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">8 900.00 <span>тг.</span><strong>13 750.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/dress.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">25%</span>
+                </div>
+                <h4 class="card__title">Сарафан в клетку №2<span>Детская одежда</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">8 000.00 <span>тг.</span><strong>9 750.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/black-jacket.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">35%</span>
+                </div>
+                <h4 class="card__title">Пальто детское<span>Детская одежда</span></h4>
+                <span class="card__score appreciated">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">8 300.00 <span>тг.</span><strong>10 500.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/necktie.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">20%</span>
+                </div>
+                <h4 class="card__title">Галстук в полоску №2<span>Мужская одежда</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">1 300.00 <span>тг.</span><strong>1 850.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/backpack-blue.jpg" alt="Синий рюкзак">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">20%</span>
+                </div>
+                <h4 class="card__title">Рюкзак синий<span>Аксессуары</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">8 300.00 <span>тг.</span><strong>10 850.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/shirt.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Блузка модель 111<span>Женская одежда</span></h4>
+                <span class="card__score appreciated">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">3 000.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/jacket.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Пуховик артикул: 2801<span>Пуховики</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">21 200.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/trainers.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Обувь Т 452<span>Женская Обувь</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">12 555.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/backpack.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <h4 class="card__title">Рюкзак PUMA<span>Рюкзаки</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">5 000.00 <span>тг.</span></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/shoes.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">40%</span>
+                </div>
+                <h4 class="card__title">Туфли детские 555<span>Детская обувь</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">8 900.00 <span>тг.</span><strong>13 750.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+              <a href="#" class="card">
+                <div class="card__image-box">
+                  <div class="card__image">
+                    <img src="img/card/dress.jpg" alt="Рубашка">
+                  </div>
+                  <div class="card__image-box_hidden">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <span class="card__tag">25%</span>
+                </div>
+                <h4 class="card__title">Сарафан в клетку №2<span>Детская одежда</span></h4>
+                <span class="card__score">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </span>
+                <div class="card__price-tag">
+                  <strong class="card__price">8 000.00 <span>тг.</span><strong>9 750.00<span>&nbsp;тг.</span></strong></strong>
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </a>
+              <!-- /.card -->
+            </div>
+            <!-- /.catalog__grid -->
+            <p class="catalog__text">Найдено товаров: <span>510</span>. Показано с <span>1</span> по <span>15</span></p>
+            <div class="catalog__pagination">
+              <a href="#" class="catalog__pag-link catalog__pag-link_active">1</a>
+              <a href="#" class="catalog__pag-link">2</a>
+              <a href="#" class="catalog__pag-link">3</a>
+              <a href="#" class="catalog__pag-link">4</a>
+              <a href="#" class="catalog__pag-link">...</a>
+              <a href="#" class="catalog__pag-link">30</a>
+              <button class="catalog__pag-next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <!-- /.catalog__col catalog__col_products -->
+        </div>
+        <!-- /.catalog__row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.catalog -->
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Сервисы платформы</h2>
+        <div class="swiper-container services__swiper-container swiper-no-swiping">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="http://elib.kdt.kz" class="services__link">
+                <div class="services__image">
+                  <img src="img/services/elib.jpg" alt="Е-Библиотека">
+                </div>
+                <h4 class="services__name">Учись с умом с E-Библиотекой</h4>
+                <span class="services__ref">http://elib.kdt.kz</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="http://estol.kdt.kz" class="services__link">
+                <div class="services__image">
+                  <img src="img/services/estol.jpg" alt="Е-Столовая">
+                </div>
+                <h4 class="services__name">Ешь не думая с E-Столовой</h4>
+                <span class="services__ref">http://estol.kdt.kz</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="http://security.kdt.kz" class="services__link">
+                <div class="services__image">
+                  <img src="img/services/security.jpg" alt="Безопасностьм">
+                </div>
+                <h4 class="services__name">Безопасность с BMC СМБР!</h4>
+                <span class="services__ref">http://security.kdt.kz</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="http://exams.kdt.kz" class="services__link">
+                <div class="services__image">
+                  <img src="img/services/exams.jpg" alt="Exams">
+                </div>
+                <h4 class="services__name">Проверь свои знания с Exams</h4>
+                <span class="services__ref">http://exams.kdt.kz</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev services__swiper-button-prev"><i class="fas fa-angle-left"></i></div>
+          <div class="swiper-button-next services__swiper-button-next"><i class="fas fa-angle-right"></i></div>
+        </div>
+        <!-- Slider main container -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.services -->
+  </main>
+
+  <footer>
+    <section class="footer__top">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__col">
+            <h3 class="footer__title">Товаропроводящие сети на <span>BMC Sales</span></h3>
+            <p class="footer__text">Наша платформа предоставляет услуги по созданию онлайн-магазинов для продажи вашей продукции</p>
+            <div class="footer__social">
+              <a href="#" class="footer__link-social"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="footer__link-social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer__link-social"><i class="fab fa-vk"></i></a>
+              <a href="#" class="footer__link-social"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <!-- /.footer__col -->
+          <div class="footer__col">
+            <h3 class="footer__mobile">Мобильное приложение</h3>
+            <div class="footer__app-links">
+              <a href="#" class="footer__app-link">
+                <img src="img/footer/app-store.png" alt="App Store">
+              </a>
+              <a href="#" class="footer__app-link">
+                <img src="img/footer/google-play.png" alt="Google Play">
+              </a>
+            </div>
+            <a href="#" class="footer__link-profile">Ваш профиль<i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- /.footer__col -->
+          <div class="footer__col">
+            <a href="#" class="footer__link">О платформе</a>
+            <a href="#" class="footer__link">Участники</a>
+            <a href="#" class="footer__link">Партнеры</a>
+            <a href="#" class="footer__link">Поддержка и обслуживание</a>
+            <a href="#" class="footer__link">Конфиденциальность</a>
+            <a href="#" class="footer__link">Новости</a>
+            <a href="#" class="footer__link">Доставка</a>
+            <a href="#" class="footer__link">Оплата и Возврат</a>
+          </div>
+          <!-- /.footer__col -->
+          <div class="footer__col">
+            <a href="#" class="footer__brand brand">
+              <div class="brand__logo">
+                <img src="img/footer/logo-black.png" alt="Лого">
+              </div>
+              <div class="brand__text">
+                <strong class="brand__name">BMC Sales</strong>
+                <span class="brand__description">партнерская сеть продаж</span>
+              </div>
+            </a>
+            <!-- /.footer__brand -->
+            <a href="tel:+77777888999" class="footer__tel">+7 (777) 788 89 99</a>
+            <a href="mailto:bmc-sales@gmail.com" class="footer__email">bmc-sales@gmail.com</a>
+            <div class="footer__payments">
+              <img src="img/footer/payments.png" alt="Карты">
+            </div>
+          </div>
+          <!-- /.footer__col -->
+        </div>
+        <!-- /.footer__row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.footer__top -->
+    <section class="footer__bottom">
+      <div class="container">
+        <p class="footer__copyright">Copyright © BenchMark Consulting 2018-2019. Все права защищены</p>
+        <a href="#" class="footer__mistake">Сообщить об ошибке</a>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.footer__bottom -->
+  </footer>
+
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

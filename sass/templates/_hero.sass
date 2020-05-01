@@ -150,6 +150,36 @@
     transition: 0.4s
     &:hover
       color: $dark
+  // сортировки
+  &__path-sort
+    display: flex
+    align-items: end
+    justify-content: space-between
+  &__sortings
+    display: flex
+    color: #919191
+    letter-spacing: 0.14px
+    margin-top: 59px
+  &__sort-name
+    display: block
+    margin-bottom: 10px
+  &__select
+    appearance: none
+    border: 1px solid #d0d0d0
+    color: $dark
+    letter-spacing: 0.14px
+    position: relative
+    outline: none
+    width: 319px
+    padding: 14px 19px
+    background: url('../img/angle-down.svg') no-repeat center right 20px
+    cursor: pointer
+    transition: 0.3s
+    &_second
+      width: 202px
+  &__sorting
+    &:nth-of-type(2)
+      margin-left: 30px
 .brand
   display: flex
   align-items: center
