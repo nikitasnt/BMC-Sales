@@ -278,4 +278,59 @@ $(document).ready(function () {
     $('.catalog__nav-link').removeClass('catalog__nav-link_active');
     $(this).addClass('catalog__categ-btn_active');
   });
+
+
+
+  // закртыие и открытие модального окна кликами мыши
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn = $('.modal__close');
+  
+  modalBtn.on('click', function () {
+    modal.addClass('modal_active');
+  });
+  closeBtn.on('click', function () {
+    modal.removeClass('modal_active');
+  });
+  $(window).on('keyup', function(e) {
+    if (e.keyCode == 27) {
+      modal.removeClass('modal_active');
+    }
+  });
+  modal.on('click', function(e){
+    if ($(e.target).removeClass('modal_active')) {
+        // клик внутри элемента 
+        return;
+    }
+  });
+
+
+
+  // форма модального окна
+  $('.modal__form').validate({
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userPassword: {
+        required: true,
+        minlength: 5
+      }
+    },
+    // сообщения
+    messages: {
+      userEmail: {
+        required: "Введите Email",
+        email: "Email: \"name@domain.com\""
+      },
+      userPassword: {
+        required: "Введите пароль",
+        minlength: "Пароли длиннее 5 символов"
+      }
+    }
+  });
 });

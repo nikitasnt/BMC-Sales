@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMC Sales</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -35,7 +36,7 @@
             </a>
           </div>
         </nav>
-        <button class="menu__button">Вход на сайт<i class="fas fa-lock menu__button-icon"></i></button>
+        <button class="menu__button" data-toggle="modal">Вход на сайт<i class="fas fa-lock menu__button-icon"></i></button>
         <div class="header__burger">
           <span></span>
         </div>
@@ -755,10 +756,33 @@
     <!-- /.footer__bottom -->
   </footer>
 
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"><i class="far fa-times-circle"></i></button>
+      <h3 class="modal__title">Введите свои данные</h3>
+      <form class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label for="modal-user-email" class="form__label">Email</label>
+          <input type="email" name="userEmail" class="form__input" id="modal-user-email" placeholder="Ваш email">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="modal-user-password" class="form__label">Пароль</label>
+          <input type="password" name="userPassword" class="form__input" id="modal-user-password" placeholder="Ваш пароль">
+        </div>
+        <button class="modal__button">Войти</button>
+      </form>
+      <!-- /.form modal__form -->
+      <a href="index.html" class="modal__reg-link">Или зарегистрируйтесь</a>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/timer.js"></script>
   <script src="js/lazysizes.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
