@@ -2505,6 +2505,7 @@ img {
   padding: 13px 35px 14px 19px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .product__in-garbage:hover, .product__in-favorite:hover, .product__wholesale:hover {
